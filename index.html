@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>caballero tests Klāvs Vegners</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./scripts.js"></script>
+  <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+</head>
+
+<body>
+
+<div class="front-hero" id="front-hero">
+
+  <header class="header">
+
+  <div class="header__logo">
+    <img src="content\ekonams-logo.svg">
+  </div>
+
+  <nav class="header__menu">
+    <ul>
+      <li>
+        <a href="#">KVALITĀTE</a>
+        <ul class="dropdown">
+          <li><a href="#">Video</a></li>
+          <li><a href="#">Animācija</a></li>
+          <li><a href="#">Salīdzinājums</a></li>
+          <li><a href="#">Galerija</a></li>
+        </ul>
+      </li>
+      <li><a href="#">PROJEKTI</a></li>
+      <li>
+        <a href="#">SADARBĪBA</a>
+        <ul class="dropdown">
+          <li><a href="#">Shēma</a></li>
+          <li><a href="#">Partneri</a></li>
+          <li><a href="#">Lorem Ipsum is simply dummy text of the printing</a></li>
+        </ul>
+      </li>
+      <li><a href="#">BLOGS</a></li>
+      <li><a href="#">PAR MUMS</a></li>
+      <li><a href="#">KONTAKTI</a></li>
+    </ul>
+  </nav>
+
+  <div class="header__mobile-nav">
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+      <i id="menu__mobile-icon" class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="header__lang">
+      <select>
+        <option value="EN">EN</option>
+        <option value="NO">NO</option>
+        <option value="SE">SE</option>
+        <option value="RU">RU</option>
+        <option value="LV">LV</option>
+      </select>
+  </div>
+
+  </header>
+
+</div>
+
+<div style="display: none;" class="menu__mobile" id="menu__mobile">
+  <nav class="menu__mobile-nav">
+
+    <div class="menu__mobile-lang">
+      <button><a href="#">EN</a></button>
+      <button><a href="#">NO</a></button>
+      <button><a href="#">SE</a></button>
+      <button><a href="#">RU</a></button>
+      <button><a href="#">LV</a></button>
+    </div>
+
+    <ul>
+      <li>
+        <a href="#">KVALITĀTE</a>
+      </li>
+        <ul class="dropdown">
+          <li><a href="#">Video</a></li>
+          <li><a href="#">Animācija</a></li>
+          <li><a href="#">Salīdzinājums</a></li>
+          <li><a href="#">Galerija</a></li>
+        </ul>
+      <li><a href="#">PROJEKTI</a></li>
+      <li>
+        <a href="#">SADARBĪBA</a>
+      </li>
+        <ul class="dropdown">
+          <li><a href="#">Shēma</a></li>
+          <li><a href="#">Partneri</a></li>
+          <li><a href="#">Lorem Ipsum is simply dummy text of the printing</a></li>
+        </ul>
+      <li><a href="#">BLOGS</a></li>
+      <li><a href="#">PAR MUMS</a></li>
+      <li><a href="#">KONTAKTI</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div class="hero">
+  <video class="hero__video" width="100%" autoplay muted loop>
+    <source src="./content/front-hero.mp4">
+  </video>
+  <div class="video__mute">
+    <a class="mute__button">
+      <img src="./content/eko-nams-audio-mute.svg">
+    </a>
+  </div>
+  <h1 class="hero__title">
+    Guļbūvju ražošana īsti Skandināviskās tradīcijās
+  </h1>
+</div>
+
+<div class="hero__under" id="hero__under">
+  <div class="col-4">
+    <h3>RAŽOŠANA</h3>
+    <h2>DIGITĀLA</h2>
+    <p>ietver tradīciju un kultūrvēsturiskā mantojuma glabāšanu</p>
+  </div>
+  <div class="col-4">
+    <h3>TEHNOLOĢIJA UN PIEREDZE</h3>
+      <div class="col-2">
+        <h2>CAD CAM</h2>
+        <p>unikāla šīs metodes adaptācija</p>
+      </div>
+      <div class="col-2">
+        <h2>20 gadi</h2>
+        <p>un 17 gadu pieredze ar CNC iekārtām</p>
+      </div>
+  </div>
+  <div class="col-4">
+    <h3>APJOMI UN KAPACITĀTE</h3>
+    <div class="col-2">
+      <h2>670+</h2>
+      <p>piegādātas guļbūves</p>
+    </div>
+    <div class="col-2">
+      <h2>30 000 m²</h2>
+      <p>ražošanas telpu platība</p>
+    </div>
+  </div>
+  <div class="col-4">
+    <h3>KVALITĀTE</h3>
+    <div class="col-2">
+      <h2>0.5 mm</h2>
+      <p>apstrādes precizitāte</p>
+    </div>
+    <div class="col-2">
+      <h2>98%</h2>
+      <p>eksports. Ražots Latvijā.</p>
+    </div>
+  </div>
+</div>
+
+<div class="hero__under-ruler">
+  <img width="80%" src="./content/lineala-raksts.svg">
+</div>
+
+<div class="product">
+  <div class="col-2 product__info">
+    <h1>Produkts</h1>
+    <p>Guļbūve ir viena no senākajām ēku konstrukcijām, kura, nezaudējot savu īpašo vērtību un nozīmi, saglabājusies līdz pat mūsdienām. Aizvien vairāk pilsētnieku izjūt nepieciešamību dzīvot ekoloģiski tīrā un mājīgā vidē, būt harmonijā ar dabu, ar sevi. Meistarīgi veidota guļbūve apvienojumā ar modernām tehnoloģijām palīdz šos sapņus realizēt dzīvē.</p>
+      <div class="product__more-div">
+          <button class="product__more"><a href="#">VAIRĀK PAR PRODUKTU</a></button>
+          <i class="fas fa-arrow-right"></i>
+      </div>
+  </div>
+  <div class="col-2 product__image">
+    <img src="./content/Rectangle Copy 3.jpg">
+  </div>
+  <div class="product__behind-img">
+  </div>
+</div>
+
+<div class="news__title">
+  <h1>Aktualitātes</h1>
+</div>
+<div class="news__background">
+  <div class="news">
+    <div class="col-2">
+      <div class="news__container">
+        <img src="./content/veggtykkelser-2160x1453.jpg">
+        <div class="news__caption">
+        </div>
+      </div>
+      <figcaption class="news__caption-text">LOREM IPSUM IS SIMPLY THE DUMMY TEXT OF THE PRINTING AND TYPESETTING INDUSTRY.</figcaption>
+    </div>
+    <div class="col-2">
+      <div class="news__container">
+        <img src="./content/kontor-2160x1082.jpg">
+        <div class="news__caption">
+        </div>
+      </div>
+      <figcaption class="news__caption-text">LOREM IPSUM IS SIMPLY THE DUMMY TEXT OF THE PRINTING AND TYPESETTING INDUSTRY.</figcaption>
+    </div>
+    <div class="news__behind-img">
+    </div>
+  </div>
+</div>
+
+<div class="map__container">
+  <h1 class="map__title">Produkcijas realizācija Skandināvijā</h1>
+  <div id="map">
+
+  </div>
+</div>
+
+<div class="footer__container">
+  <div class="footer__menu-row top-row">
+    <div class="footer__logo">
+      <img src="./content/eko-nams-logo-footer.svg"></img>
+    </div>
+      <nav class="footer__menu">
+        <ul>
+          <li><a href="#">LEJUPIELĀDES</a></li>
+          <li><a href="#">SĪKDATNES NOTEIKUMI</a></li>
+          <li><a href="#">PRIVĀTUMA POLITIKA</a></li>
+        </ul>
+      </nav>
+  </div>
+  <div class="footer__menu-row middle-row">
+    <img class="footer__ruler" width="100%" src="./content/lineals-footer.svg">
+  </div>
+  <div class="footer__menu-row bottom-row">
+    <div class="col-3 copyright">
+        <p>© 2020 EKO NAMS. Visas tiesības aizsargātas.</p>
+    </div>
+    <div class="col-3 footer__logo-bottom">
+      <img src="./content/_caballero-digital-agency.svg">
+    </div>
+    <div class="col-3 social-icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-linkedin-in"></i>
+      <i class="fab fa-youtube"></i>
+    </div>
+  </div>
+</div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfKpsjtUYaWwrZEMVPaoQuqM59nPr6MWI&callback=initMap&libraries=&v=weekly" async></script>
+
+</body>
+</html>
