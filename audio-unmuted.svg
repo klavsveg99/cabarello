@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75" width="75" height="75">
+	<title>Speaker_Icon-svg</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff;stroke: #ffffff;stroke-linejoin:round;stroke-width: 5 } 
+		.shp1 { fill: none;stroke: #ffffff;stroke-linecap:round;stroke-width: 5 } 
+	</style>
+	<path id="Layer" class="shp0" d="M39.39 13.77L22.23 28.61L6 28.61L6 47.7L21.99 47.7L39.39 62.75L39.39 13.77Z" />
+	<path id="Layer" class="shp1" d="M48 27.6C49.04 29.18 49.84 30.9 50.38 32.72C50.92 34.53 51.2 36.41 51.2 38.3C51.2 40.19 50.92 42.07 50.38 43.88C49.84 45.7 49.04 47.42 48 49M55.1 20.5C56.99 23.06 58.46 25.91 59.45 28.93C60.44 31.95 60.95 35.12 60.95 38.3C60.95 41.48 60.44 44.65 59.45 47.67C58.46 50.69 56.99 53.54 55.1 56.1M61.6 14C64.35 17.42 66.5 21.28 67.95 25.42C69.41 29.56 70.15 33.91 70.15 38.3C70.15 42.69 69.41 47.04 67.95 51.18C66.5 55.32 64.35 59.18 61.6 62.6" />
+</svg>
